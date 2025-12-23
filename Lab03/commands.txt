@@ -1,0 +1,102 @@
+# 1. Создать директорию linux_lab
+mkdir ~/linux_lab
+
+# 2. Создать структуру каталогов
+mkdir -p ~/linux_lab/{backups,projects/{scripts,web/static},temp}
+
+# 3. Проверить структуру
+tree ~/linux_lab
+
+# 4. Создать файлы в scripts
+touch ~/linux_lab/projects/scripts/{main.py,config.yaml,utils.sh}
+
+# 5. Создать файлы в web/static
+touch ~/linux_lab/projects/web/static/{index.html,styles.css}
+
+# 6. Наполнить index.html
+cat > ~/linux_lab/projects/web/static/index.html
+
+# 7. Скопировать styles.css в temp с новым именем
+cp ~/linux_lab/projects/web/static/styles.css ~/linux_lab/temp/old_styles.css
+
+# 8. Переместить config.yaml в temp
+mv ~/linux_lab/projects/scripts/config.yaml ~/linux_lab/temp/
+
+# 9. Скопировать все .sh в temp
+cp ~/linux_lab/projects/scripts/*.sh ~/linux_lab/temp/
+
+# 10. Рекурсивный список файлов, отсортированных по размеру
+find ~/linux_lab -type f -exec ls -l {} \; | sort -k5 -n
+
+# 11. Создать жесткую ссылку
+ln ~/linux_lab/projects/scripts/main.py ~/hard_link.txt
+
+# 12. Вывести содержимое файла по ссылке
+cat ~/hard_link.txt
+
+# 13. Изменить содержимое ссылки
+cat >> ~/hard_link.txt
+
+# 14. Проверить содержимое оригинала
+cat ~/linux_lab/projects/scripts/main.py
+
+# 15. Создать символьную ссылку
+ln -s ~/linux_lab/projects/web/static ~/linux_lab/temp/web_link
+
+# 16. Перейти по ссылке
+cd ~/linux_lab/temp/web_link
+
+# 17. Проверить содержимое в виде дерева
+tree .
+
+# 18. Архивировать projects
+tar -cvf ~/linux_lab/backups/projects_backup.tar ~/linux_lab/projects
+
+# 19. Создать gzip архив web
+tar -czvf ~/linux_lab/backups/web_backup.tar.gz ~/linux_lab/projects/web
+
+# 20. Создать zip архив important_files.zip
+zip ~/linux_lab/backups/important_files.zip ~/linux_lab/projects/scripts/{main.py,utils.sh}
+
+# 21. Разархивировать web_backup.tar.gz
+mkdir ~/linux_lab/temp/restored_web
+tar -xzvf ~/linux_lab/backups/web_backup.tar.gz -C ~/linux_lab/temp/restored_web
+
+# 22. Просмотреть содержимое zip без распаковки
+unzip -l ~/linux_lab/backups/important_files.zip
+
+# 23. Удалить содержимое temp
+rm -rf ~/linux_lab/temp/*
+
+# 24. Удалить содержимое backups
+rm -rf ~/linux_lab/backups/*
+
+# 25. Удалить символьную ссылку web_link
+rm ~/linux_lab/temp/web_link
+
+# 26. Информация о пользователе и системе
+whoami > ~/linux_lab/report.txt
+logname >> ~/linux_lab/report.txt
+pwd >> ~/linux_lab/report.txt
+id >> ~/linux_lab/report.txt
+ls -l ~/linux_lab/projects/scripts >> ~/linux_lab/report.txt
+
+# 27. Добавить дату и время
+date >> ~/linux_lab/report.txt
+
+# 28. Скопировать report.txt в домашний каталог
+cp ~/linux_lab/report.txt ~/
+
+# 29. Заархивировать linux_lab с паролем
+zip -r -P 1111 ~/linux_lab_final.zip ~/linux_lab
+
+# 30. Проверить размер архива
+ls -lh ~/linux_lab_final.zip
+
+# 31. Удалить каталог linux_lab
+rm -rf ~/linux_lab
+
+# 32. Разархивировать финальный архив и проверить
+unzip ~/linux_lab_final.zip -d ~/
+cat ~/linux_lab/report.txt
+tree ~/linux_lab
