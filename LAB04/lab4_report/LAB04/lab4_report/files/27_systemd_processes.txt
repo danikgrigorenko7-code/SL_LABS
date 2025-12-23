@@ -1,0 +1,8 @@
+root         278       1  0 14:39 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root         336       1  0 14:39 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     495       1  0 14:39 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+message+     589       1  0 14:39 ?        00:00:01 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         623       1  0 14:39 ?        00:00:00 /usr/lib/systemd/systemd-logind
+daniel_+    1269       1  0 14:39 ?        00:00:00 /usr/lib/systemd/systemd --user
+daniel_+    1290    1269  0 14:39 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+daniel_+    3615    3475  0 15:46 pts/0    00:00:00 grep --color=auto systemd

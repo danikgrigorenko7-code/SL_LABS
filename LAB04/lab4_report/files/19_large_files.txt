@@ -1,0 +1,11 @@
+/home/daniel_dv/.cache/mesa_shader_cache_db/index
+/home/daniel_dv/.cache/mozilla/firefox/l1bmbz92.default-release/startupCache/startupCache.8.little
+/home/daniel_dv/.cache/mozilla/firefox/l1bmbz92.default-release/startupCache/scriptCache.bin
+/home/daniel_dv/.cache/mozilla/firefox/l1bmbz92.default-release/cache2/entries/6F37107BC237499428C82A45A2AF41C17DF140DE
+/home/daniel_dv/.cache/mozilla/firefox/l1bmbz92.default-release/safebrowsing/google-trackwhite-digest256.vlpset
+/home/daniel_dv/.cache/mozilla/firefox/l1bmbz92.default-release/safebrowsing/google4/goog-phish-proto.vlpset
+/home/daniel_dv/Downloads/code.deb
+/home/daniel_dv/.oh-myzsh/custom/plugins/zsh-syntax-highlighting/.git/objects/pack/pack-59f763e0444a079a75abe20e7b6107b5ab22412e.pack
+/home/daniel_dv/.mozilla/firefox/l1bmbz92.default-release/favicons.sqlite
+/home/daniel_dv/.mozilla/firefox/l1bmbz92.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.sqlite
+/home/daniel_dv/.mozilla/firefox/l1bmbz92.default-release/places.sqlite

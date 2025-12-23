@@ -1,0 +1,20 @@
+2025-12-23T15:35:57.464915+03:00 daniel-pc systemd[3311]: Closed pk-debconf-helper.socket - debconf communication socket.
+2025-12-23T15:35:57.464999+03:00 daniel-pc systemd[3311]: Closed speech-dispatcher.socket - Speech Dispatcher Socket.
+2025-12-23T15:35:57.474185+03:00 daniel-pc systemd[3311]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+2025-12-23T15:35:57.475447+03:00 daniel-pc systemd[3311]: Removed slice app.slice - User Application Slice.
+2025-12-23T15:35:57.475560+03:00 daniel-pc systemd[3311]: Reached target shutdown.target - Shutdown.
+2025-12-23T15:35:57.475671+03:00 daniel-pc systemd[3311]: Finished systemd-exit.service - Exit the Session.
+2025-12-23T15:35:57.475730+03:00 daniel-pc systemd[3311]: Reached target exit.target - Exit the Session.
+2025-12-23T15:35:57.487384+03:00 daniel-pc systemd[1]: user@113.service: Deactivated successfully.
+2025-12-23T15:35:57.487751+03:00 daniel-pc systemd[1]: Stopped user@113.service - User Manager for UID 113.
+2025-12-23T15:35:57.493503+03:00 daniel-pc systemd[1]: Stopping user-runtime-dir@113.service - User Runtime Directory /run/user/113...
+2025-12-23T15:35:57.496970+03:00 daniel-pc systemd[1]: run-user-113.mount: Deactivated successfully.
+2025-12-23T15:35:57.498429+03:00 daniel-pc systemd[1]: user-runtime-dir@113.service: Deactivated successfully.
+2025-12-23T15:35:57.499201+03:00 daniel-pc systemd[1]: Stopped user-runtime-dir@113.service - User Runtime Directory /run/user/113.
+2025-12-23T15:35:57.500007+03:00 daniel-pc systemd[1]: Removed slice user-113.slice - User Slice of UID 113.
+2025-12-23T15:35:57.500182+03:00 daniel-pc systemd[1]: user-113.slice: Consumed 1.375s CPU time.
+2025-12-23T15:45:16.615373+03:00 daniel-pc deluser[3586]: Looking for files to backup/remove ...
+2025-12-23T15:45:16.618482+03:00 daniel-pc deluser[3586]: Removing files ...
+2025-12-23T15:45:16.620399+03:00 daniel-pc deluser[3586]: Removing crontab ...
+2025-12-23T15:45:16.623512+03:00 daniel-pc crontab[3590]: (root) LIST (auditor)
+2025-12-23T15:45:16.624965+03:00 daniel-pc deluser[3586]: Removing user `auditor' ...
